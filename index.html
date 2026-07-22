@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chase Game</title>
+    <link rel="stylesheet" href="styles1.css">
+</head>
+<body>
+
+    <h1 id="main-title">Chase Game</h1>
+
+    <div class="content-section">
+        <h2>Game Rules</h2>
+        <p>You are the survivor. Run from the killer, punch to stun them, dash away with <strong>E</strong>, and heal with <strong>Q</strong> only after landing a punch.</p>
+
+        <h2>Controls</h2>
+        <ul class="control-list">
+            <li><strong>Move:</strong> WASD / Arrow Keys</li>
+            <li><strong>[R] Punch:</strong> Stun the killer if close enough</li>
+            <li><strong>[E] Dash:</strong> Quick burst of speed</li>
+            <li><strong>[Q] Heal:</strong> Only works after landing a punch</li>
+        </ul>
+    </div>
+
+    <div id="game-arena-container">
+        <h2>Live Chase Arena</h2>
+        <p>Click the canvas to focus if controls aren't registering.</p>
+
+        <div id="game-hud">
+            <div>HP: <span id="hp-display">100</span></div>
+            <div>Heal Available: <span id="heal-display">NO</span></div>
+            <div>Killer State: <span id="chaser-display">Chasing</span></div>
+            <button id="reset-btn">Reset Game</button>
+        </div>
+
+        <canvas id="gameCanvas" width="600" height="400"></canvas>
+    </div>
+
+    <script src="script1.js"></script>
+</body>
+</html>
